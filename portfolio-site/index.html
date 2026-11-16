@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aloba Oluwatimilehin — Data Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f2f5f3;--grid:#dde5e1;--ink:#13242c;--mute:#51636b;--card:#fff;--line:#c9d5d0;--acc:#0b6e6e;--accbg:#d8ece9}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10191d;--grid:#19262b;--ink:#e6eeea;--mute:#9db0b0;--card:#16232a;--line:#2a3c43;--acc:#5fd0c4;--accbg:#183a3b}}
+:root[data-theme="dark"]{--bg:#10191d;--grid:#19262b;--ink:#e6eeea;--mute:#9db0b0;--card:#16232a;--line:#2a3c43;--acc:#5fd0c4;--accbg:#183a3b}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "IBM Plex Sans",system-ui,sans-serif;
+background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.12;margin:0}
+a{color:var(--acc)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:18px 0;flex-wrap:wrap}
+nav b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.1rem}
+nav div{display:flex;gap:18px}
+nav a{color:var(--ink);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--acc)}
+.hero{padding:56px 0 64px}
+.hero h1{font-size:clamp(2.2rem,6vw,4.2rem);max-width:15ch;letter-spacing:-.02em}
+.hero p{max-width:60ch;color:var(--mute);font-size:1.1rem;margin:22px 0 28px}
+.btn{display:inline-block;padding:12px 20px;border-radius:6px;font-weight:500;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);margin:0 10px 10px 0}
+.btn.p{background:var(--acc);border-color:var(--acc);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.p{color:#08201f}}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;margin-top:44px;border:1.5px solid var(--ink);background:var(--card)}
+.stats div{padding:18px 20px;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats strong{display:block;font:700 2rem "Bricolage Grotesque",sans-serif;color:var(--acc)}
+.stats span{color:var(--mute);font-size:.9rem}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(1.6rem,3.5vw,2.3rem);margin-bottom:22px}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:40px}
+@media(max-width:760px){.about{grid-template-columns:1fr}}
+.about p{max-width:62ch;margin:0 0 1em}
+.sk h3{font-size:1rem;margin:0 0 8px}
+.sk{margin-bottom:18px}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tags span{background:var(--accbg);color:var(--ink);padding:3px 10px;border-radius:4px;font-size:.88rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);padding:20px;border-radius:4px}
+.card img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:3px;margin-bottom:14px}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p{margin:0 0 12px;color:var(--mute);font-size:.95rem}
+.card small{color:var(--acc);font-weight:500}
+.tl{border-left:2px solid var(--ink);padding-left:22px;margin-left:4px}
+.tl article{margin-bottom:30px;position:relative}
+.tl article::before{content:"";position:absolute;left:-30px;top:8px;width:10px;height:10px;background:var(--acc);border-radius:50%}
+.tl time{color:var(--mute);font-size:.88rem}
+.tl h3{font-size:1.2rem;margin:2px 0}
+.tl em{font-style:normal;color:var(--acc);font-weight:500}
+.tl p{max-width:64ch;margin:6px 0 0}
+.contact li{list-style:none;margin-bottom:6px}
+.contact ul{padding:0;margin:0 0 22px}
+.contact b{display:inline-block;min-width:90px}
+footer{padding:28px 0 40px;color:var(--mute);font-size:.9rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Aloba Oluwatimilehin</b><div><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<h1>I build the dashboard people actually check on Monday morning.</h1>
+<p>Data Analyst working across SQL, Python, Power BI and Excel. I clean messy datasets, build KPI dashboards, and explain what the numbers mean to people who don’t have time to dig for it themselves. My background is analytical chemistry research, so I’m comfortable with data that has to be right, not just pretty.</p>
+<a class="btn p" href="#projects">View projects</a><a class="btn" href="#contact">Get in touch</a>
+<div class="stats">
+<div><strong>5+</strong><span>years experience</span></div>
+<div><strong>10+</strong><span>dashboards built</span></div>
+<div><strong>6</strong><span>core tools</span></div>
+<div><strong>M.Tech</strong><span>analytical chemistry</span></div>
+</div>
+</header>
+
+<section id="about" class="about">
+<div>
+<h2>From the lab bench to the dashboard.</h2>
+<p>I started out as a laboratory researcher, which means I learned data discipline the hard way: every result has to be traceable, validated, and defensible before anyone acts on it. I’ve carried that habit into data analytics. I clean and QA a dataset the way I’d QA a lab sample, then build dashboards and reports that hold up under scrutiny.</p>
+<p>Today I split my time between teaching data analysis (SQL, Python, Power BI, Tableau) to new analysts at JIT Solutions, and managing large research and production datasets as a graduate teaching assistant at FUTA. Earlier, I worked inside a food manufacturing plant analysing production KPIs and running quality-assurance inspections, so I understand data from the shop floor up to the executive summary.</p>
+</div>
+<div>
+<div class="sk"><h3>Analysis &amp; visualization</h3><div class="tags"><span>SQL</span><span>Python (Pandas, NumPy)</span><span>Power BI</span><span>Tableau</span><span>Advanced Excel</span><span>OriginPro</span></div></div>
+<div class="sk"><h3>Data management</h3><div class="tags"><span>Data Cleaning &amp; Wrangling</span><span>ETL Processes</span><span>Data Validation &amp; QA</span><span>Database Querying</span></div></div>
+<div class="sk"><h3>Business &amp; reporting</h3><div class="tags"><span>KPI Tracking &amp; Reporting</span><span>Dashboard Design</span><span>Process Optimization</span><span>Statistical Analysis</span></div></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Dashboards &amp; reports</h2>
+<div class="grid">
+<div class="card"><img src="images/boutique_sales.png" alt="" loading="lazy" onerror="this.remove()"><h3>Boutique Sales Dashboard</h3><p>Revenue, customer count and average revenue per customer for a boutique retailer, by country, age band and season.</p><small>Power BI, DAX</small></div>
+<div class="card"><img src="images/sales_interactive_trim.jpg" alt="" loading="lazy" onerror="this.remove()"><h3>Sales Interactive Dashboard</h3><p>Multi-page report on sales trend, sales method and top states for a sporting goods retailer, with product and region slicers.</p><small>Power BI</small></div>
+<div class="card"><img src="images/exec_financial_trim.jpg" alt="" loading="lazy" onerror="this.remove()"><h3>Executive Finance Summary</h3><p>Profit by date, profit by country and sale price by segment and product, built for leadership review.</p><small>Power BI</small></div>
+<div class="card"><img src="images/hr_analytics_trim.jpg" alt="" loading="lazy" onerror="this.remove()"><h3>HR Analytics Dashboard</h3><p>Headcount, gender split, job satisfaction and layoffs by department to support HR planning.</p><small>Power BI</small></div>
+<div class="card"><img src="images/sales_sport.png" alt="" loading="lazy" onerror="this.remove()"><h3>Research Institute HR Report</h3><p>Service years, job satisfaction, distance-to-work, and lay-off vs retain breakdown by department.</p><small>Power BI</small></div>
+<div class="card"><img src="images/life_expectancy_trim.jpg" alt="" loading="lazy" onerror="this.remove()"><h3>Life Expectancy Analysis</h3><p>Links life expectancy to GDP, immunization rates and mortality, comparing developed and developing nations.</p><small>Power BI</small></div>
+<div class="card"><img src="images/student_performance_trim.jpg" alt="" loading="lazy" onerror="this.remove()"><h3>Student Performance Dashboard</h3><p>Test outcomes by gender, ethnicity and parental education level to surface performance gaps.</p><small>Power BI</small></div>
+<div class="card"><img src="images/plastic_waste.png" alt="" loading="lazy" onerror="this.remove()"><h3>Plastic Waste: Insight &amp; Impact in Africa</h3><p>Ranks African countries by plastic waste risk, continental contribution and recycling by source. Built during 3MTT training.</p><small>Power BI</small></div>
+<div class="card"><img src="images/sales_dashboard.png" alt="" loading="lazy" onerror="this.remove()"><h3>Sales by Sub-Category (Superstore)</h3><p>Regional sales and profit by product sub-category, showing which lines drive the most revenue per region.</p><small>Power BI</small></div>
+<div class="card"><img src="images/sql_database.png" alt="" loading="lazy" onerror="this.remove()"><h3>SQL: Database &amp; Table Creation</h3><p>Creating a database and table from scratch, inserting records and querying results, from ongoing SQL practice notes.</p><small>SQL Server</small></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="tl">
+<article><time>Dec 2025 – Present</time><h3>Data Analyst Instructor (Contract)</h3><em>JIT Solutions, Akure</em><p>Hands-on training in data analysis, visualization and SQL using real-world datasets. Guide learners through Python-based data cleaning, EDA, and dashboard development in Power BI and Tableau.</p></article>
+<article><time>2022 – Present</time><h3>Graduate Teaching Assistant, Data &amp; Research Support</h3><em>Federal University of Technology, Akure (FUTA)</em><p>Manage, validate and analyze large academic and experimental datasets. Support student research projects using Excel, Power BI and Python.</p></article>
+<article><time>Apr 2021 – Dec 2021</time><h3>Production Data Analyst</h3><em>Africa GB Foods Manufacturing Nigeria Limited</em><p>Analyzed production and operational data to monitor efficiency, throughput and quality KPIs. Built Excel reports and dashboards tracking defects and performance trends.</p></article>
+<article><time>Jun 2018 – Dec 2018</time><h3>Industrial Training Analyst, Quality Assurance</h3><em>Africa GB Foods Manufacturing Nigeria Limited</em><p>Analyzed training and quality datasets to evaluate program effectiveness. Conducted QA inspections, documented non-conformities and supported CAPA processes.</p></article>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let’s talk about your data.</h2>
+<p>Open to remote and global data analyst roles, freelance dashboard work, and data training engagements.</p>
+<ul>
+<li><b>Email</b><a href="mailto:alobasunday55@gmail.com">alobasunday55@gmail.com</a></li>
+<li><b>Phone</b>+234 813 424 7944</li>
+<li><b>LinkedIn</b><a href="https://www.linkedin.com/in/aloba-oluwatimilehin-3b473817b/" target="_blank" rel="noopener">linkedin.com/in/aloba-oluwatimilehin</a></li>
+<li><b>Location</b>Ondo, Nigeria (open to remote / global roles)</li>
+</ul>
+<a class="btn p" href="mailto:alobasunday55@gmail.com">Send an email</a>
+</section>
+
+<footer>Built and maintained by Aloba Oluwatimilehin.</footer>
+</div>
+</body>
+</html>
